@@ -17,13 +17,7 @@ body{
     font-size: 1 rem;
 }
 .bg{
-    background: rgb(1,36,0);
-    background: linear-gradient(180deg, rgba(1,36,0,1) 0%, rgba(20,121,9,1) 50%, rgba(3,193,54,1) 100%);
-}
-.bg-g{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    background:#30360f;
 }
 a {
     color: inherit;
@@ -33,8 +27,7 @@ ul {
     margin: 0;
     padding-inline-start: 0;
     list-style-type: none;
-    margin-block-start: 0;
-    color: #5a2729;
+    margin-block-start: 0; 
 }
 li {
     margin: 10px;
@@ -50,34 +43,68 @@ form{
     justify-content: space-around;
     align-items: center;
     padding: 0px;
-    color: #be5f61;
+    color:#e4cdb5;
     font-family: 'Questrial', sans-serif;
 }
-.presentation{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.presentation h1{
-    grid-area: 1 / 1 / 2 / 3;
-    text-align: left;
-    font-size: 1.5rem;
-    margin: 20px;
+h1, h2, h3{
+    font-size: 1.3rem;
+    margin: 0px;
     font-family: 'Prompt', sans-serif;
     color: #f3dfab;
+    margin: 10px;
+}
+.presentation{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+.titlePt1{
+    grid-area: 1 / 1 / 2 / 3;
+    text-align: start;
+    z-index: 2;
+    align-self: start;
+}
+.titlePt1 .titlePt2{
+    position: absolute;
+}
+.titlePt2{
+    grid-area: 2 / 1 / 3 / 3;
+    text-align: center;
+    align-self: start;
+    z-index: 3;
+}
+.titlePt3{
+    grid-area: 3 / 1 / 4 / 3;
+    align-self: start;
+    text-align: end;
+    font-size: 1.2rem;
 }
 .img1{
-    grid-area: 1 / 1 / 4 / 2;
+    grid-area: 1 / 1 / 3 / 2;
     width: 100%;
     height: auto;
 }
 .img2{
-    grid-area: 2 / 2 / 4 / 3;
-    width: 100%;
-    height: auto;
+    grid-area: 1 / 2 / 4 / 3;
+    align-self: center;
+    max-width: 100%;
+    height: auto; 
+}
+.video-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px;
+    margin: 0px 10px;
+}
+small {
+    color: #e7ddd2; 
+}
+small a{
+    text-decoration:underline #e7ddd2;
 }
 .logo, .icono{
-    width: 45px;
+    width: 40px;
 }
 .newspaper {
     border-style: solid;
@@ -94,9 +121,12 @@ form{
 footer{
     display:flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 @media (min-width:600px){
     form{
         width: 50%;
     }
 }
+
+

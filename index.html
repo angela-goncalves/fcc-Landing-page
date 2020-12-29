@@ -7,20 +7,20 @@
     <meta name="description" content="Angela's FreecodeCamp Project: Landing Page">
     <title>FreeCodeCamp Proyect: Angela's Landing Page</title>
     <link rel="stylesheet" href="landing.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@500&display=swap" rel="stylesheet">
+
 
 </head>
 
-<body class='bg'>
+<body>
     <header id="header">
         <nav id="nav-bar">
             <ul class="nav-bar">
-                <li><a href="#"><img id="header-img" class="logo" src="svg/nature.svg" alt="company's logo" /></a>
+                <li><a href="index.html"><img id="header-img" class="logo" src="svg/nature.svg"
+                            alt="company's logo" /></a>
                 </li>
                 <li><a href="#oferts" class='nav-link'>Oferts</a></li>
                 <li><a href='#products' class='nav-link'>Products</a></li>
@@ -28,56 +28,68 @@
             </ul>
         </nav>
     </header>
-    <div class="presentation">
-        <h1 class="titlePt1">With the Nature</h1>
-        <img src="/png/vegan.jpg" alt="a girl with a leaf" class="img1" />
-        <h2 class="titlePt2">you can have</h2>
-        <img src="/png/nature.jpg" alt="a girl under a tree" class="img2" />
-        <h3 class="titlePt3">the beautiful skin <br>you ever wanted</br></h3>
-    </div>
-    <div class="video-container">
-        <video controls width="300" height="auto" id="video">
-            <source src="video/video2.mp4" type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-        </video>
-        <small> If you want to watch more click the link <a
-                href="https://www.youtube.com/watch?v=UJnvODOX_eo">here</a></small>
-    </div>
-    <div>
-        <main>
+    <main>
+        <div class="presentation">
+            <h1 class="titlePt1">With the Nature</h1>
+            <img src="/png/nature.jpg" alt="a girl with a leaf" class="img1" />
+            <h2 class="titlePt2">you can have</h2>
+            <img src="/png/nature2.jpg" alt="a girl under a tree" class="img2" />
+            <h3 class="titlePt3">the beautiful skin <br>you ever wanted</br></h3>
+        </div>
+        <div class="oferts-prdcts">
             <div id="oferts">
-                <a href="#">
-                    <img src="/png/all skin types.jpg" alt="black girl's face" class="oferts" />
-                    <h4>With your $200 purchase you will have a beautiful gift</h4>
-                </a>
+                <h4>Oferts</h4>
+                <div class="oferts">
+                    <a href="#" rel="noopener" target="_blank">
+                        <img src="/png/skin.jpg" alt="black girl's face" class="img-oferts" />
+                    </a>
+                    <p>With your $200 purchase you will have a beautiful gift</p>
+                </div>
             </div>
             <div id="products">
-                <a href="#">
-                    <img src="/png/skin.jpg" alt="white girl's face" class="products" />
-                    <h4>It doesn't matter the type of your skin, you can find your perfect product here</h4>
-                </a>
+                <h4>Products</h4>
+                <div class="prdcts">
+                    <a href="#" rel="noopener" target="_blank">
+                        <img src="/png/all-skin-types.jpg" alt="white girl's face" class="img-prdcts" />
+                    </a>
+                    <p>It doesn't matter the type of your skin, you can find the perfect product here</p>
+                </div>
             </div>
-            <div id="newspaper">
-                <form id="form" action='https://www.freecodecamp.com/email-submit' method='get'>
-                    <label for="email" class="question">E-mail</label>
-                    <input id="email" type="email" name="email" class="newspaper newsp-size"
-                        placeholder="forexample@example.com" required />
-                    <input id="submit" type="submit" value="Submit"
-                        href=url("https://www.freecodecamp.com/email-submit") />
-                </form>
-            </div>
-        </main>
+        </div>
+
+        <h4>Skin Care</h4>
+        <div class="video-container">
+            <p>For more information about skin care you can see this video or click
+                <a href="https://www.youtube.com/watch?v=UJnvODOX_eo" rel="noopener" target="_blank">right here
+                    to see the full video in youtube</a>
+            </p>
+            <video controls width="300" height="auto" id="video">
+                <source src="video/video2.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </div>
+        <div id="newspaper">
+            <h4 class="subscribe">Subscribe for more</h4>
+            <form id="form" action='https://www.freecodecamp.com/email-submit' method='get'>
+                <label for="email" class="question">Write your e-mail here and we will send you more oferts</label>
+                <input id="email" type="email" name="email" class="newspaper newsp-size"
+                    placeholder="forexample@example.com" required />
+                <input id="submit" type="submit" value="Submit" class="submit-word submit-bttn" />
+            </form>
+        </div>
+    </main>
     </div>
-        <footer>
-            <p>Angela G.</p>
-            <a href="mailto:angelakgo20@gmail.com" target="blank" rel="noreferrer"><img class="icono"
-                    src="/svg/envelope.svg" alt="e-mail icon" /></a>
-            <a href="https://github.com/angela-goncalves/fcc-tribute-page" target="blank" rel="noreferrer"><img
-                    class="icono" src="/svg/github.svg" alt="github icon" /></a>
-            <a href="https://codepen.io/angela-goncalves" target="blank" rel="noreferrer"><img class="icono"
-                    src="/svg/codepenicon.svg" alt="codepen icon" /></a>
-            <p>Sep 2020</p>
-        </footer>
+    <footer>
+        <p>Angela G.</p>
+        <a href="mailto:angelakgo20@gmail.com" target="_blank" rel="noopener"><img class="icono" src="/svg/envelope.svg"
+                alt="e-mail icon" /></a>
+        <a href="https://github.com/angela-goncalves/fcc-tribute-page" target="_blank" rel="noopener"><img class="icono"
+                src="/svg/github.svg" alt="github icon" /></a>
+        <a href="https://codepen.io/angela-goncalves" target="_blank" rel="noopener"><img class="icono"
+                src="/svg/codepenicon.svg" alt="codepen icon" /></a>
+        <p>Dic. 2020</p>
+    </footer>
 </body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" rel="noopener"></script>
+
 </html>

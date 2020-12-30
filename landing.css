@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+main {
+    padding-top: 90px;
+}
 :root {
     --border-radius: 5px;
     --border-width: 2px;
@@ -35,6 +38,12 @@ a {
     padding: 0px;
     color:var(--color);
     font-family: var(--font-family-2);
+    background-color: white;
+    max-width: 800px;
+}
+#header{
+    position: fixed;
+    width: 100%;
 }
 ul {
     margin: 0;

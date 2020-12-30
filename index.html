@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@500&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -19,35 +19,36 @@
     <header id="header">
         <nav id="nav-bar">
             <ul class="nav-bar">
-                <li><a href="index.html"><img id="header-img" class="logo" src="svg/nature.svg"
+                <li><a href="index.html" rel="noreferrer"><img id="header-img" class="logo" src="svg/nature.svg"
                             alt="company's logo" /></a>
                 </li>
-                <li><a href="#oferts" class='nav-link'>Oferts</a></li>
-                <li><a href='#products' class='nav-link'>Products</a></li>
-                <li><a href='#newspaper' class='nav-link'>News</a></li>
+                <li><a href="#offers" class='nav-link' rel="noreferrer">Offers</a></li>
+                <li><a href='#products' class='nav-link' rel="noreferrer">Products</a></li>
+                <li><a href='#newspaper' class='nav-link' rel="noreferrer">News</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <h1>Skincare with <br>The Nature</br></h1>
         <div class="presentation">
-            <h1 class="titlePt1">With the Nature</h1>
+            <p class="titlePt1">What you didn't know</P>
             <img src="/png/nature.jpg" alt="a girl with a leaf" class="img1" />
-            <h2 class="titlePt2">you can have</h2>
+            <p class="titlePt2">about skincare,</p>
             <img src="/png/nature2.jpg" alt="a girl under a tree" class="img2" />
-            <h3 class="titlePt3">the beautiful skin <br>you ever wanted</br></h3>
+            <p class="titlePt3">you'll find it here</p>
         </div>
-        <div class="oferts-prdcts">
-            <div id="oferts">
-                <h4>Oferts</h4>
-                <div class="oferts">
+        <div class="offers-prdcts">
+            <div id="offers">
+                <h2>Offers</h2>
+                <div class="offers">
                     <a href="#" rel="noopener" target="_blank">
-                        <img src="/png/skin.jpg" alt="black girl's face" class="img-oferts" />
+                        <img src="/png/skin.jpg" alt="black girl's face" class="img-offers" />
                     </a>
-                    <p>With your $200 purchase you will have a beautiful gift</p>
+                    <p>Hundreds of offers from the best brands, experts in skincare, you can only find it here.</p>
                 </div>
             </div>
             <div id="products">
-                <h4>Products</h4>
+                <h2>Products</h2>
                 <div class="prdcts">
                     <a href="#" rel="noopener" target="_blank">
                         <img src="/png/all-skin-types.jpg" alt="white girl's face" class="img-prdcts" />
@@ -56,8 +57,8 @@
                 </div>
             </div>
         </div>
-
-        <h4>Skin Care</h4>
+        <h2 id="newspaper">News</h2>
+        <h3>Skin Care</h3>
         <div class="video-container">
             <p>For more information about skin care you can see this video or click
                 <a href="https://www.youtube.com/watch?v=UJnvODOX_eo" rel="noopener" target="_blank">right here
@@ -68,13 +69,13 @@
                 Sorry, your browser doesn't support embedded videos.
             </video>
         </div>
-        <div id="newspaper">
-            <h4 class="subscribe">Subscribe for more</h4>
+        <div>
+            <h2 class="subscribe">Subscribe for more</h2>
             <form id="form" action='https://www.freecodecamp.com/email-submit' method='get'>
-                <label for="email" class="question">Write your e-mail here and we will send you more oferts</label>
+                <label for="email" class="question"><p>Send us your e-mail if you want more offers</p></label>
                 <input id="email" type="email" name="email" class="newspaper newsp-size"
                     placeholder="forexample@example.com" required />
-                <input id="submit" type="submit" value="Submit" class="submit-word submit-bttn" />
+                <input id="submit" type="submit" value="Send" class="submit-word submit-bttn"/>
             </form>
         </div>
     </main>
@@ -90,6 +91,6 @@
         <p>Dic. 2020</p>
     </footer>
 </body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" rel="noopener"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </html>

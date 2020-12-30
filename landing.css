@@ -39,7 +39,7 @@ a {
     color:var(--color);
     font-family: var(--font-family-2);
     background-color: white;
-    max-width: 800px;
+    max-width: 750px;
 }
 #header{
     position: fixed;

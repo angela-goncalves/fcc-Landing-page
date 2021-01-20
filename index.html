@@ -17,69 +17,76 @@
 
 <body>
     <header id="header">
-        <nav id="nav-bar">
-            <ul class="nav-bar">
-                <li><a href="index.html" rel="noreferrer"><img id="header-img" class="logo" src="svg/nature.svg"
-                            alt="company's logo" /></a>
-                </li>
+        <nav id="nav-bar" class="nav-bar">
+            <a href="index.html" rel="noreferrer"><img id="header-img" class="logo" src="svg/nature.svg"
+                    alt="company's logo" /></a>
+            <ul>
                 <li><a href="#offers" class='nav-link' rel="noreferrer">Offers</a></li>
                 <li><a href='#products' class='nav-link' rel="noreferrer">Products</a></li>
                 <li><a href='#newspaper' class='nav-link' rel="noreferrer">News</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Skincare with <br>The Nature</br></h1>
+    <main id="welcome-section">
         <div class="presentation">
-            <p class="titlePt1">What you didn't know</P>
-            <img src="/png/nature.jpg" alt="a girl with a leaf" class="img1" />
-            <p class="titlePt2">about skincare,</p>
-            <img src="/png/nature2.jpg" alt="a girl under a tree" class="img2" />
-            <p class="titlePt3">you'll find it here</p>
+            <h1>Skincare with <br>Nature</br></h1>
+            <img src="/png/palms.jpg" alt="a girl with a leaf" class="img1" />
+            <img src="/png/vegan.jpg" alt="a girl under a tree" class="img2" />
+            <p>
+                All about skincare, from offers to news, only here!
+            </P>
         </div>
-        <div class="offers-products">
-            <div id="offers">
-                <h2>Offers</h2>
-                <div class="offers">
-                    <a href="#" rel="noopener" target="_blank">
-                        <img src="/png/skin.jpg" alt="black girl's face" class="img-offers" />
-                    </a>
-                    <p>Hundreds of offers from the best brands, experts in skincare, you can only find it here.</p>
-                </div>
-            </div>
-            <div id="products">
-                <h2>Products</h2>
-                <div class="products">
-                    <a href="#" rel="noopener" target="_blank">
-                        <img src="/png/all-skin-types.jpg" alt="white girl's face" class="img-products" />
-                    </a>
-                    <p>It doesn't matter the type of your skin, you can find the perfect product here</p>
-                </div>
+    </main>
+    <section>
+        <div id="offers" class="offers-box">
+            <a href="#" rel="noopener" target="_blank">
+                <h3>Offers of the best brands</h3>
+            </a>
+            <div class="offers-content">
+                <img src="/png/skin.jpg" alt="blonde girl's face" class="img-offers" />
+                <p>Your favorite products from top skincare brands have offers all year,
+                    take a look <a href="#" rel="noopener" target="_blank">here</a>
+                    and enjoy the power of a healthy beautiful skin.
+                </p>
             </div>
         </div>
-        <h2 id="newspaper">News</h2>
-        <h3>Skin Care</h3>
+    </section>
+    <section>
+        <div id="products">
+            <a href="#" rel="noopener" target="_blank">
+                <h3>All products of your favorite brands</h3>
+            </a>
+            <div class="products">
+                <img src="/png/all-skin-types.jpg" alt="black girl's face" class="img-products" />
+                <p>It doesn't matter the type of your skin, you can find the perfect product of the best skincare
+                    brands <a href="#" rel="noopener" target="_blank">here</a></p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3 id="newspaper">News</h3>
         <div class="video-container">
-            <p>For more information about skin care you can see this video or click
-                <a href="https://www.youtube.com/watch?v=UJnvODOX_eo" rel="noopener" target="_blank">right here
-                    to see the full video in youtube</a>
+            <p>For more information about skin care you can watch this short video or
+                <a href="https://www.youtube.com/watch?v=UJnvODOX_eo" rel="noopener" target="_blank">click here to see
+                    it in full in youtube</a>
             </p>
             <video controls width="300" height="auto" id="video">
                 <source src="video/video2.mp4" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video>
         </div>
-        <div>
-            <h2 class="subscribe">Subscribe for more</h2>
-            <form id="form" action='https://www.freecodecamp.com/email-submit' method='get'>
-                <label for="email" class="question"><p>Send us your e-mail if you want more offers</p></label>
-                <input id="email" type="email" name="email" class="newspaper newsp-size"
-                    placeholder="forexample@example.com" required />
-                <input id="submit" type="submit" value="Send" class="submit-word submit-bttn"/>
-            </form>
-        </div>
-    </main>
-    </div>
+    </section>
+    <section>
+        <h3 class="subscribe">Subscribe for more</h3>
+        <form id="form" action='https://www.freecodecamp.com/email-submit' method='get'>
+            <label for="email" class="question">
+                <p>Send us your e-mail if you want more offers</p>
+            </label>
+            <input id="email" type="email" name="email" class="newspaper newsp-size"
+                placeholder="forexample@example.com" required />
+            <input id="submit" type="submit" value="Send" class="submit-word submit-bttn" />
+        </form>
+    </section>
     <footer>
         <p>Angela G.</p>
         <a href="mailto:angelakgo20@gmail.com" target="_blank" rel="noopener"><img class="icono" src="/svg/envelope.svg"
